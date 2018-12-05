@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Presentation</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/serif.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>
+						<img src="./img/git-logo.png" class="logo" width="300">
+					</h2>
+					<h4 class="fragment fade-up">By Kirill Tovpinets</h4>
+				</section>
+				<section>
+					<h3>The main problem</h3>
+					<ul>
+						<li>Development history</li>
+						<li>Collaboration</li>
+						<li>Who should be punished?</li>
+						<li>Project backups</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Main components of Git</h3>
+					<div class="row">
+						<div class="thumb">
+							<img src="img/commit.png" alt="">
+							<p class="description">Commit</p>
+						</div>
+						<div class="thumb">
+							<img src="img/branch.png" alt="">
+							<p class="description">Branch</p>
+						</div>
+						<div class="thumb">
+							<img src="img/repository.png" alt="">
+							<p class="description">Repository</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>Main commands of git</h3>
+					<pre><code>git init //inisializes an empty Git repository</code></pre>
+					<pre><code>git clone //creates a local copy of a project</code></pre>
+					<pre><code>git add //stages a change</code></pre>
+					<pre><code>git commit //saves the snap shot to the project history</code></pre>
+					<pre><code>git status //shows the status of changes</code></pre>
+					<pre><code>git branch //shows the branches</code></pre>
+					<pre><code>git pull //updates the local line of development</code></pre>
+					<pre><code>git push //updates the remote repository</code></pre>
+				</section>
+				<section>
+					<h3>GitHub</h3>
+					<h4>What is this?</h4>
+				</section>
+				<section>
+					<h3>GitHub flow</h3>
+					<ul>
+						<li>Create a branch</li>
+						<li>Add commits</li>
+						<li>Open a pull request</li>
+						<li>Discuss and review code</li>
+						<li>Merge</li>
+						<li>Deploy</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Resume</h3>
+					<ul>
+						<li>Manage developing process</li>
+						<li>Save all project versions </li>
+						<li>Seperate your developing process</li>
+						<li>GitHub is a hosting servise for Git</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

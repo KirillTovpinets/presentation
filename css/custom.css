@@ -1,0 +1,16 @@
+.reveal .logo,
+.reveal .thumb img{
+	border:none;
+	box-shadow:none;
+	margin: 0;
+}
+
+.reveal .thumb img{
+	height:200px;
+}
+
+.reveal .row{
+	display: flex;
+	justify-content:space-between;
+}
+
